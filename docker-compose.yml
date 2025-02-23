@@ -7,7 +7,10 @@ services:
       timeout: 60s
       retries: 5
     ### Add environment variables here
-
+    #ex. PATH = /user/local/bin    
+    #ex. copy --from = builder
+    #ex. ENV path = $PATH : /opp/.venv/bin
+    
     ### Add depends postgres here
 
     ### expose ports here
