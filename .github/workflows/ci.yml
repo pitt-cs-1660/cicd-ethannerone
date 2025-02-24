@@ -75,11 +75,11 @@ jobs:
         name: Authenticate to GCP
         with:
           project_id: 'project2-451820' # update with your project ID
-          workload_identity_provider: 'projects/115023232642/locations/global/workloadIdentityPools/github/providers/pitt-cs-1660' # update with your Workload Identity Pool
+          workload_identity_provider: 'projects/115023232642/locations/global/workloadIdentityPools/github/providers/serviceaccount' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
-        run: gcloud auth configure-docker us-east1-docker.pkg.dev
+        run: gcloud auth configure-docker us-east1-docker.pkg.dev/project2-451820/dockreg
 
       # setup docker buildx
       - name: Setup docker buildx
