@@ -94,5 +94,5 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-east1-docker.pkg.dev/docker.pkg.dev/cc-spring2025/dansc0de/fastapi-server:v2
+          tags: us-east1-docker.pkg.dev/project2-451820/dockreg/fastapi-server:v2
 
